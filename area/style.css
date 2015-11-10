@@ -40,10 +40,10 @@ ul li {
 }
 
 #wrapper img {
-    max-width:100%;    
+    max-width:100%;
 }
 #wrapper .btn:active {
-      transform:scale(0.8);
+    transform:scale(0.8);
 }
 
 .pageItem {
@@ -80,13 +80,13 @@ ul li {
     /*animation:aAirPlane 2s cubic-bezier(.15,.93,.9,.08);*/
 }
 #homePage.active #airPlane {
-    animation:aAirPlane 2s ease-in;    
+    animation:aAirPlane 2s ease-in;
     animation-fill-mode:forwards;
 }
 
 @keyframes aAirPlane {
     100% {
-         left:18%;
+        left:18%;
     }
 }
 
@@ -96,30 +96,30 @@ ul li {
     left:100%;
     bottom:23%;
 }
-    #genderBtns img {
-        max-width:48%;
-      
-    }
-    #genderBtns img:nth-child(1) {
-        margin-right: 2%;
-    }
+#genderBtns img {
+    max-width:48%;
+
+}
+#genderBtns img:nth-child(1) {
+    margin-right: 2%;
+}
 
 
 /*等待页面*/
 #loadingPage {
     background:url(imgs/loading/1.jpg) 0 0 no-repeat;
-    background-size:contain;
+    background-size:cover;
     display:block;
 }
 
 #loadingPageContent{
     height:35%;
     width:55%;
-    margin:0 auto;    
+    margin:0 auto;
     margin-top:46%;
 }
 #loadingPageContent .smallItem {
-    height:50%; 
+    height:50%;
 }
 #loadingPageContent .normatItem {
     height:8%;
@@ -157,32 +157,32 @@ ul li {
 }
 
 .progress {
-  padding: 4px;
-  background: rgba(0, 0, 0, 0.25);
-  /*background: rgba(249, 232,222, 1);*/
-  border-radius: 6px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    padding: 4px;
+    background: rgba(0, 0, 0, 0.25);
+    /*background: rgba(249, 232,222, 1);*/
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
 }
 
 #loadingPage.active .progress-bar {
-   width:1%;
-  background-color: #0C6EB7;
-  position: relative;
-  height: 16px;
-  border-radius: 4px;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
-  -webkit-transition-property: width, background-color;
-  -moz-transition-property: width, background-color;
-  -o-transition-property: width, background-color;
-  transition-property: width, background-color;
-  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
-  animation:addProgressBar 3s ease-out;
-  animation-fill-mode:forwards;
+    width:1%;
+    background-color: #0C6EB7;
+    position: relative;
+    height: 16px;
+    border-radius: 4px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
+    animation:addProgressBar 3s ease-out;
+    animation-fill-mode:forwards;
 }
 @keyframes addProgressBar {
     100% {
@@ -192,31 +192,31 @@ ul li {
 
 
 .progress-bar:before, .progress-bar:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .progress-bar:before {
-  bottom: 0;
-  background: url("imgs/loading/stripes.png") 0 0 repeat;
-  border-radius: 4px 4px 0 0;
+    bottom: 0;
+    background: url("imgs/loading/stripes.png") 0 0 repeat;
+    border-radius: 4px 4px 0 0;
 }
 .progress-bar:after {
-  z-index: 2;
-  bottom: 45%;
-  border-radius: 4px;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    z-index: 2;
+    bottom: 45%;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
 }
 /**进度条end **/
 
 
 #loadingTips {
-    height:30%;
+    height:30%!important;
     margin-top:5%;
     overflow:hidden;
     text-align:center;
@@ -255,7 +255,7 @@ ul li {
 }
 .gameDesciptionItem:nth-child(1) {
     top:0%;
-    height:30%;    
+    height:30%;
     left:-100%;
 }
 .gameDesciptionItem:nth-child(2) {
@@ -305,12 +305,12 @@ ul li {
     top: 0px;
     width:20%;
     height:22%;
-   
+
 }
 #gamePage.active .horizontal {
-     transform: translate3d(0, 0, 0);
-     /*animation: aHorizontal 0.20s ease-in-out 0s infinite alternate;*/
-     animation: aHorizontal 1.20s ease-in-out 0s infinite alternate;
+    transform: translate3d(0, 0, 0);
+    /*animation: aHorizontal 0.20s ease-in-out 0s infinite alternate;*/
+    animation: aHorizontal 1.20s ease-in-out 0s infinite alternate;
 }
 .vertical {
     position: absolute;
@@ -334,20 +334,20 @@ ul li {
 }
 
 @keyframes aHorizontal {
-  0% {left: 0px;}
-  100% {left: 80%;}
+    0% {left: 0px;}
+    100% {left: 80%;}
 }
 
 @keyframes aVertical {
-  0% {top: 0px;}
-  100% {top: 400%;}
+    0% {top: 0px;}
+    100% {top: 400%;}
 }
 
 
 @keyframes aPerson {
-  100% {
-      transform:rotate(360deg) translateZ(0);
-  }
+    100% {
+        transform:rotate(360deg) translateZ(0);
+    }
 }
 
 
@@ -372,18 +372,18 @@ ul li {
     height:100%;
 }
 #gamePage.active #hisihiLogoH {
-     animation: aHorizontal 3.08s ease-in-out 0s infinite alternate;
+    animation: aHorizontal 3.08s ease-in-out 0s infinite alternate;
 }
 @keyframes aHisihiLogoH {
-      0% {right: 0px;}
-      100% {left: 80%;}
+    0% {right: 0px;}
+    100% {left: 80%;}
 }
 
 #gamePage.active #hisihiLogoV {
-     animation: aHisihiLogoV 4.08s ease-in-out 0s infinite alternate;
+    animation: aHisihiLogoV 4.08s ease-in-out 0s infinite alternate;
 }
 @keyframes aHisihiLogoV {
-        0% {top: 0px;}
+    0% {top: 0px;}
     100% {top: 400%;}
 }
 
@@ -405,7 +405,7 @@ ul li {
     max-width:30%;
 }
 #useDictionaryBtn .errorInfo {
-    color:#EA000E;  
+    color:#EA000E;
     font-size:0.657em;
     margin-top:0.3em;
     display:none;
@@ -413,7 +413,7 @@ ul li {
 
 /**结果页面**/
 #resultPage {
-    
+
 }
 .resultContainer {
     height:75%;
@@ -424,18 +424,18 @@ ul li {
 .resultContainer .imgContainer {
     width:90%;
     height:58%;
-    margin:3% auto;    
+    margin:3% auto;
     padding-top:5%;
 }
 
 .resultContainer .imgContainer img {
-        
+
 }
 
 .resultInfoItem {
     min-height:6%;
     width:90%;
-    margin:2% auto;    
+    margin:2% auto;
 }
 .resultInfoItem img, .resultInfoItem span{
     float:left;
@@ -447,7 +447,7 @@ ul li {
 }
 .resultInfoItem .nameFiled {
     font-size:0.9em;
-    color:#B6766D;    
+    color:#B6766D;
 }
 .resultInfoItem .level {
     max-width:65% !important;
@@ -477,7 +477,7 @@ ul li {
     margin:5% auto;
 }
 .shareAndGiveUpBtns img {
-    max-width:48% !important;    
+    max-width:48% !important;
 }
 .shareAndGiveUpBtns img:nth-child(1) {
     margin-left:2%;
@@ -490,19 +490,11 @@ ul li {
     height:8%;
 }
 #downloadCon .allDownImg {
-    margin-bottom:0;    
+    margin-bottom:0;
     position:absolute;
     bottom:0;
 }
-/*#downloadCon a{*/
-    /*vertical-align:central;*/
-    /*float:right;*/
-    /*margin-right:7%;*/
-    /*margin-top:2%;*/
-    /*max-width:24%;*/
-    /*position:relative;*/
-    /*z-index:100;*/
-/*}*/
+
 #downloadCon .downBtn {
     vertical-align:central;
     float:right;
@@ -527,7 +519,7 @@ ul li {
 
 @media screen and (min-width:750px) {
     #wrapper {
-        width: 400px;
+        width: 490px;
         height: 100%;
         position: relative;
         margin: 0 auto;
@@ -539,8 +531,24 @@ ul li {
 
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:370px) {
+    #homePage,#gamePage,#loadingPage,#hisihiDictionaryCon {
+        background-size: cover;
+    }
+
+    #airPlane {
+        top: 25%;
+    }
+    #useDictionaryBtn {
+        top:80%;
+    }
 }
 
 @media screen and (max-width:320px) {
+    #homePage,#gamePage,#loadingPage  {
+        background-size: cover;
+    }
+    #airPlane {
+        top:23%;
+    }
 }

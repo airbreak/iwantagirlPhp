@@ -4,7 +4,7 @@
         title: '', // 分享标题
         desc: '', // 分享描述
         link: '', // 分享链接
-        imgUrl: 'http://game.hisihi.com/solo/area/images/home/sharelogo.png', // 分享图标
+        imgUrl: '', // 分享图标
         type: 'link', // 分享类型,music、video或link，不填默认为link
         dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
         trigger: function () {
@@ -24,7 +24,7 @@
         title: '', // 分享标题
         desc: '', // 分享描述
         link: '', // 分享链接
-        imgUrl: 'http://game.hisihi.com/solo/area/images/home/sharelogo.png', // 分享图标
+        imgUrl: '', // 分享图标
         type: 'link', // 分享类型,music、video或link，不填默认为link
         dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
         trigger: function () {
@@ -44,7 +44,7 @@
         title: '', // 分享标题
         desc: '', // 分享描述
         link: '', // 分享链接
-        imgUrl: 'http://game.hisihi.com/solo/area/images/home/sharelogo.png', // 分享图标
+        imgUrl: '', // 分享图标
         type: 'link', // 分享类型,music、video或link，不填默认为link
         dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
         trigger: function () {
@@ -64,7 +64,7 @@
         title: '', // 分享标题
         desc: '', // 分享描述
         link: '', // 分享链接
-        imgUrl: 'http://game.hisihi.com/solo/area/images/home/sharelogo.png', // 分享图标
+        imgUrl: '', // 分享图标
         type: 'link', // 分享类型,music、video或link，不填默认为link
         dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
         trigger: function () {
@@ -83,7 +83,7 @@
     wx.onMenuShareTimeline({
         title: '', // 分享标题
         link: '', // 分享链接
-        imgUrl: 'http://game.hisihi.com/solo/area/images/home/sharelogo.png', // 分享图标	 
+        imgUrl: '', // 分享图标
         trigger: function () {
             this.title = window.hisihiShareInfo.title + window.hisihiShareInfo.desc;
             this.link=window.hisihiShareInfo.link;

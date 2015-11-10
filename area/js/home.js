@@ -56,15 +56,18 @@ var Igirl = function ($wrapper) {
         }
     });
 
+    //关闭分享提示
     this.$wrapper.on('touchend', ' #shareTips', function () {
         $(this).hide();
     });
 
+    //点击到小嘿
     this.$wrapper.on('touchend', '#hisihiLogoH', function () {
         that.catchType = 'hi';
         that.getRandomPerson('hi');
     });
 
+    //下载app
     this.$wrapper.on('touchend', '#downloadCon .downBtn',function(){
         recordViewInfo(2);
         window.location.href='http://www.hisihi.com/download.php';
@@ -79,7 +82,7 @@ Igirl.prototype = {
             index = $target.index(),
             url = this.baseUrl+'imgs/game/3.png',
             gender = 'girl';
-        if (index == 1) {
+        if (index == 0) {
             url = this.baseUrl+'imgs/game/2.png';
             gender = 'boy';  //性别
         }
@@ -187,7 +190,7 @@ function setShareToFriendsInfo(strType, index) {
         title: '让我命犯桃花的就是这只【' + result.t + '】',
         desc: '光棍节到了，快进来捉一只' + strType + '，结束你的单身生活！',
         link: 'http://game.hisihi.com/double11/',
-        imgUrl: '',
+        imgUrl: 'http://game.hisihi.com/double11/area/imgs/home/shareSmall.jpg',
         type: 'link',
         dataUrl: '',
         shareCallback: function () {
@@ -286,16 +289,4 @@ var allPersonInfo = {
     ],
     hi: [{ n: '小嘿', t: '小嘿', h: '无限', w: '无限', d: '百万设计师都认识的设计大神', l: '1', img: '7.png' }]
 };
-
-//wx.config({
-//    debug: false,
-//    appId: '<?php echo $signPackage["appId"];?>',
-//    timestamp: <?php echo $signPackage["timestamp"];?>,
-//nonceStr: '<?php echo $signPackage["nonceStr"];?>',
-//signature: '<?php echo $signPackage["signature"];?>',
-//jsApiList: [
-//  // 所有要调用的 API 都要加到这个列表中
-//    'checkJsApi','chooseImage','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone','onMenuShareTimeline'
-//]
-//});
 

@@ -17,14 +17,14 @@ file_put_contents($counterFile, $num);
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width ,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
-	<meta name="sharecontent" data-msg-img="http://game.hisihi.com/solo/area/images/home/sharelogo.png" data-msg-title="活捉一只妹纸" data-msg-content="活捉一只妹纸" data-msg-callBack="" data-line-img="http://game.hisihi.com/solo/area/images/home/sharelogo.png" data-line-title="活捉一只妹纸" data-line-callBack=""/>
+	<meta name="sharecontent" data-msg-img="http://game.hisihi.com/double11/area/imgs/home/shareSmall.jpg" data-msg-title="活捉一只妹纸" data-msg-content="活捉一只妹纸" data-msg-callBack="" data-line-img="http://game.hisihi.com/double11/area/imgs/home/shareSmall.jpg" data-line-title="活捉一只妹纸" data-line-callBack=""/>
 	<meta name="description" content="嘿设汇,活捉一只妹纸" />
 	<meta name="keywords" content="嘿设汇,活捉一只妹纸" />
     <title>活捉一只妹纸</title>
 	<link href="area/style.css" rel="stylesheet"/>
 </head>
 <body>
-  <img src="http://game.hisihi.com/solo/area/images/home/sharelogo1.png" id="noAttentionImg" height="0" width="0" />
+  <img src="http://game.hisihi.com/double11/area/imgs/home/shareBig.jpg" id="noAttentionImg" height="0" width="0" />
   <div id="wrapper">
       <!--游戏加载-->
       <div id="loadingPage" class="pageItem active">
@@ -120,7 +120,7 @@ file_put_contents($counterFile, $num);
                         <span class="hInfo"></span>
                     </span>
                     <span class="hAndwIconCon">
-                        <img src="area/imgs/gameover/h.png" class="hAndwIncon" />
+                        <img src="area/imgs/gameover/w.png" class="hAndwIncon" />
                         <span class="wInfo"></span>
                     </span>
               </div>
