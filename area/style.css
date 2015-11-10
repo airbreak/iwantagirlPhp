@@ -252,6 +252,7 @@ ul li {
 .gameDesciptionItem {
     position:absolute;
     width:100%;
+    text-align: center;
 }
 .gameDesciptionItem:nth-child(1) {
     top:0%;
@@ -305,6 +306,7 @@ ul li {
     top: 0px;
     width:20%;
     height:22%;
+    z-index: 99;
 
 }
 #gamePage.active .horizontal {
@@ -417,9 +419,9 @@ ul li {
 
 }
 .resultContainer {
-    height:75%;
+    height:84%;
     width:80%;
-    margin:14% auto;
+    margin:10% auto;
     background-color:white;
 }
 .resultContainer .imgContainer {
@@ -427,10 +429,11 @@ ul li {
     height:58%;
     margin:3% auto;
     padding-top:5%;
+    text-align: center;
 }
 
 .resultContainer .imgContainer img {
-
+    max-height: 100%;
 }
 
 .resultInfoItem {
@@ -533,7 +536,7 @@ ul li {
 }
 
 @media screen and (max-width:370px) {
-    #homePage,#gamePage,#loadingPage,#hisihiDictionaryCon {
+    #homePage,#gamePage,#loadingPage {
         background-size: cover;
     }
 
@@ -543,13 +546,50 @@ ul li {
     #useDictionaryBtn {
         top:80%;
     }
+    .imgContainer img{
+        max-width: 96% !important;
+    }
+    .resultInfoItem .nameFiled{
+        font-size: 0.7em !important;
+    }
+    /*.gameDesciptionItem img{*/
+        /*max-width: 80% !important;*/
+    /*}*/
 }
 
-@media screen and (max-width:320px) {
-    #homePage,#gamePage,#loadingPage  {
+@media screen and (max-width:320px) and (max-height: 560px){
+    #homePage,#gamePage,#loadingPage,#hisihiDictionaryCon  {
         background-size: cover;
     }
     #airPlane {
         top:23%;
     }
+    #useDictionaryBtn {
+        top:80%;
+    }
+    .imgContainer img{
+        max-height: 82% !important;
+    }
+    .resultInfoItem .nameFiled{
+        font-size: 0.7em;
+    }
+    .resultInfoItem .level{
+        max-width: 63% !important;
+    }
+}
+
+@media screen and (max-width:320px) and (max-height: 480px){
+    #homePage,#gamePage,#loadingPage,#hisihiDictionaryCon  {
+        background-size: cover;
+    }
+    .gameDesciptionItem img{
+        max-width: 80% !important;
+
+    }
+    .imgContainer img{
+        max-height: 82% !important;
+    }
+    #gameDesciption{
+        background-size:cover;
+     }
 }

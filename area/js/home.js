@@ -171,7 +171,7 @@ Igirl.prototype = {
         $resultPage.find('.resultInfoItem .level').attr('src', this.baseUrl+'imgs/gameover/star/' + result.l + '.png');
         $resultPage.find('.imgContainer img').attr('src', this.baseUrl+'imgs/gameover/' + result.img);
         $resultPage.find('.description p').text(result.d);
-        $resultPage.show().siblings().hide();
+        $resultPage.show().siblings().removeClass('active').hide();
         this.selectectedPersondex = index;
     },
 
