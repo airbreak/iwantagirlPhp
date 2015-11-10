@@ -16,8 +16,8 @@ var Igirl = function ($wrapper) {
     this.$wrapper.on('click', '#genderBtns img', $.proxy(this, 'selectGender'));
 
     //点中人物了
-    this.$wrapper.on('touchend', '.person', function () {
-        var gender = $(this).data('gender');
+    this.$wrapper.on('touchend', '.vertical', function () {
+        var gender = $(this).find('.person').data('gender');
         that.catchType=gender;
         that.getRandomPerson(gender);
     });
@@ -62,7 +62,7 @@ var Igirl = function ($wrapper) {
     });
 
     //点击到小嘿
-    this.$wrapper.on('touchend', '#hisihiLogoH', function () {
+    this.$wrapper.on('touchend', '#hisihiLogoV', function () {
         that.catchType = 'hi';
         that.getRandomPerson('hi');
     });
@@ -72,6 +72,8 @@ var Igirl = function ($wrapper) {
         recordViewInfo(2);
         window.location.href='http://www.hisihi.com/download.php';
     });
+
+    this.$wrapper.on('touchend','.audioControl', $.proxy(this,'controlPlay'));
 
     $('.btn').on('touchstart', function () { });
 };
@@ -95,10 +97,28 @@ Igirl.prototype = {
         this.$wrapper.find('#loadingPage').addClass('active').show().siblings().removeClass('active').hide();
         this.changeTipImg();
         var that = this;
+        this.setAudioElement();
         window.setTimeout(function () {
             window.clearInterval(that.tipsInterval);
             that.$wrapper.find('#homePage').addClass('active').show().siblings().removeClass('active').hide();
         }, 3000);
+    },
+
+    /*创建音频节点*/
+    setAudioElement:function(){
+        var x= document.getElementById("myAudio");
+        x.setAttribute('src',this.baseUrl+'imgs/bgmusic.mp3');
+        x.setAttribute('autoplay','autoplay');
+        x.setAttribute('loop','loop');
+    },
+
+    controlPlay:function(){
+        var audio= document.getElementById("myAudio");
+        if(audio.paused){
+            audio.play();
+            return;
+        }
+        audio.pause();
     },
 
     /*开始游戏*/
@@ -127,7 +147,6 @@ Igirl.prototype = {
             }
             $img.attr('src', src);
         }, 2000);
-        //},2000);
     },
 
     /*添加一个人物*/

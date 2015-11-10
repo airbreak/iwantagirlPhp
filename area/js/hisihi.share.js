@@ -11,6 +11,7 @@
             this.title = window.hisihiShareInfo.title;
             this.desc = window.hisihiShareInfo.desc;
             this.link=window.hisihiShareInfo.link;
+            this.imgUrl=window.hisihiShareInfo.imgUrl;
         },
         success: function () {
             window.hisihiShareInfo.shareCallback();
@@ -31,6 +32,7 @@
             this.title = window.hisihiShareInfo.title;
             this.desc = window.hisihiShareInfo.desc;
             this.link=window.hisihiShareInfo.link;
+            this.imgUrl=window.hisihiShareInfo.imgUrl;
         },
         success: function () {
             window.hisihiShareInfo.shareCallback();
@@ -51,6 +53,7 @@
             this.title = window.hisihiShareInfo.title;
             this.desc = window.hisihiShareInfo.desc;
             this.link=window.hisihiShareInfo.link;
+            this.imgUrl=window.hisihiShareInfo.imgUrl;
         },
         success: function () {
             window.hisihiShareInfo.shareCallback();
@@ -71,6 +74,7 @@
             this.title = window.hisihiShareInfo.title;
             this.desc = window.hisihiShareInfo.desc;
             this.link=window.hisihiShareInfo.link;
+            this.imgUrl=window.hisihiShareInfo.imgUrl;
         },
         success: function () {
             window.hisihiShareInfo.shareCallback();
@@ -87,6 +91,7 @@
         trigger: function () {
             this.title = window.hisihiShareInfo.title + window.hisihiShareInfo.desc;
             this.link=window.hisihiShareInfo.link;
+            this.imgUrl=window.hisihiShareInfo.imgUrl;
         },
         success: function () {
             window.hisihiShareInfo.shareCallback();

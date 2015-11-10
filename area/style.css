@@ -310,7 +310,7 @@ ul li {
 #gamePage.active .horizontal {
     transform: translate3d(0, 0, 0);
     /*animation: aHorizontal 0.20s ease-in-out 0s infinite alternate;*/
-    animation: aHorizontal 1.20s ease-in-out 0s infinite alternate;
+    animation: aHorizontal 0.500s ease-in-out 0s infinite alternate;
 }
 .vertical {
     position: absolute;
@@ -323,30 +323,31 @@ ul li {
 #gamePage.active .vertical {
     transform: translate3d(0, 0, 0);
     /*animation: aVertical 1.75s ease-in 0s infinite alternate;*/
-    animation: aVertical 2.75s ease-in 0s infinite alternate;
+    animation: aVertical 1.75s ease-in 0s infinite alternate;
 }
 .person {
     max-width:100%;
 }
-#gamePage.active .person {
-    /*animation: aPerson .905s linear 0s infinite;*/
-
-}
 
 @keyframes aHorizontal {
-    0% {left: 0px;}
-    100% {left: 80%;}
+    0% {
+        left: 0px;
+        transform:translateZ(0);
+    }
+    100% {
+        left: 80%;
+        transform:translateZ(0);
+    }
 }
 
 @keyframes aVertical {
-    0% {top: 0px;}
-    100% {top: 400%;}
-}
-
-
-@keyframes aPerson {
+    0% {
+        top: 0px;
+        transform:translateZ(0);
+    }
     100% {
-        transform:rotate(360deg) translateZ(0);
+        top: 400%;
+        transform:translateZ(0);
     }
 }
 
@@ -360,10 +361,10 @@ ul li {
 
 #hisihiLogoH {
     position:absolute;
-    top:4%;
-    right:3%;
+    bottom:0%;
+    left:3%;
     width:28%;
-    height:22%;
+    height:10%;
 }
 
 #hisihiLogoV {
@@ -383,8 +384,8 @@ ul li {
     animation: aHisihiLogoV 4.08s ease-in-out 0s infinite alternate;
 }
 @keyframes aHisihiLogoV {
-    0% {top: 0px;}
-    100% {top: 400%;}
+    0% {bottom: 0%;}
+    100% {bottom:900%;}
 }
 
 #hisihiDictionaryCon {
@@ -397,7 +398,7 @@ ul li {
 #useDictionaryBtn {
     width:100%;
     position:absolute;
-    top:69%;
+    top:72%;
     height:20%;
     text-align:center;
 }
@@ -502,7 +503,7 @@ ul li {
     margin-top:2%;
     max-width:24%;
     position:relative;
-    z-index:100;
+    z-index:1000;
 }
 
 

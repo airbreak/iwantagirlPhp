@@ -58,6 +58,7 @@ file_put_contents($counterFile, $num);
                   <img src="area/imgs/home/5.png" class="btn" />
               </div>
           </div>
+          <audio src="" id="myAudio">
       </div>
 
       <!--游戏介绍-->
