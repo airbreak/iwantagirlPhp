@@ -11,7 +11,7 @@ var Igirl = function ($wrapper) {
     this.catchType = 'girl';  //性别
     this.baseUrl='area/';
     this.loadingGame();
-
+    this.setResultImgStyle();
     var that = this;
     this.$wrapper.on('click', '#genderBtns img', $.proxy(this, 'selectGender'));
 
@@ -175,6 +175,14 @@ Igirl.prototype = {
         this.selectectedPersondex = index;
     },
 
+    /*控制图片大小*/
+    setResultImgStyle:function() {
+        var $imgParent = $(document),
+           w=$imgParent.width()*0.80*0.90,
+           h=$imgParent.height()*0.84*0.58,
+           targetSize=Math.min(w,h);
+        $imgParent.find('.resultContainer .imgContainer img').css({'width':targetSize,'height':targetSize});
+    },
     /*
     *得到随机数
     *Parameters:

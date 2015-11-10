@@ -430,6 +430,7 @@ ul li {
     margin:3% auto;
     padding-top:5%;
     text-align: center;
+    border: 1px solid white;
 }
 
 .resultContainer .imgContainer img {
